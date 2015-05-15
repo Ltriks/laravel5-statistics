@@ -75,5 +75,8 @@ return [
 	*/
 
 	'prefix' => 'laravel',
-
+	'keys' => array(
+	           'user' => 'user_%s',//用户缓存用户时的key name
+	           'user_group_perm' => 'user_group_perm_%s',//权限组
+	          ),
 ];

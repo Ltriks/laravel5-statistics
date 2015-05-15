@@ -27,6 +27,8 @@ class Kernel extends HttpKernel {
 		'auth' => 'App\Http\Middleware\Authenticate',
 		'auth.basic' => 'Illuminate\Auth\Middleware\AuthenticateWithBasicAuth',
 		'guest' => 'App\Http\Middleware\RedirectIfAuthenticated',
+	  	'backendAuth' => 'App\Http\Middleware\BackendMiddleware',  // 后台验证
+	  	'backendCsrfToken' => 'App\Http\Middleware\VerifyCsrfToken', // 后台需要csrf验证
 	];
 
 }

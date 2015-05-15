@@ -24,7 +24,15 @@ class Handler extends ExceptionHandler {
 	 */
 	public function report(Exception $e)
 	{
-		return parent::report($e);
+		if (\App::environment() == 'local') {
+            echo str_replace("\n", "<br />\n", $e);
+            \Log::info($e); 
+            return false;
+        } else {
+            \Log::info($e); 
+            return false;
+        }
+        return parent::report($e);
 	}
 
 	/**

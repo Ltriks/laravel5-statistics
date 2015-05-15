@@ -44,5 +44,6 @@
 				<div class="quote">{{ Inspiring::quote() }}</div>
 			</div>
 		</div>
+<!-- 		<object height="166" width="220" data="http://files.cnblogs.com/mrcoke/hamster.swf?" style=" padding-top:15px;outline:none;" type="application/x-shockwave-flash"><param value="http://files.cnblogs.com/mrcoke/hamster.swf?" name="movie"><param value="always" name="AllowScriptAccess"><param value="opaque" name="wmode"></object> -->
 	</body>
 </html>
